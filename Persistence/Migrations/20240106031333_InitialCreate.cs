@@ -25,7 +25,7 @@ namespace Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MyProperty", x => x.Id);
+                    table.PrimaryKey("PK_Activities", x => x.Id);
                 });
         }
 
@@ -33,7 +33,7 @@ namespace Persistence.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "MyProperty");
+                name: "Activities");
         }
     }
 }
